@@ -14,6 +14,11 @@ Visualize dados geográficos em gráficos de mapas, encontre relações de modo 
   $ git clone url-do-projeto.git
 ```
 
+### 🔑 Configurando a API Google Maps:
+- [Crie um projeto na Google Cloud](https://developers.google.com/maps/documentation/javascript/cloud-setup?hl=pt-br)
+- [Adicione uma chave de API ao projeto](https://developers.google.com/maps/documentation/javascript/get-api-key?hl=pt-br)
+- Adicione a chave de API ao seu arquivo <code>.env</code>, de acordo com o arquivo <code>.env.example</code>
+
 ### ▶️ Rodando o App:
 
 ```bash
