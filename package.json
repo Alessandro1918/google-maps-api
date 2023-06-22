@@ -1,0 +1,17 @@
+{
+  "name": "google-maps-api",
+  "version": "1.0.0",
+  "description": "## 🚀 Projeto Visualize dados geográficos em gráficos de mapas, encontre relações de modo mais fácil, e tenha insights melhores!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.ts"
+  },
+  "author": "Ale B. C.",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "path": "^0.12.7"
+  }
+}
