@@ -1,4 +1,8 @@
 //Read data from a local .csv file (with header), returns a JSON object
+
+//IMPORTANT: Before import your .csv file, replace every ', ' (comma with space) with '‚ ' (a different ASCII character that looks like a comma, plus space). 
+//This way, we can get readable text with comma-like characters inside a csv file
+
 export async function readCsv() {
 
   //read file

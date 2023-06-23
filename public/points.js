@@ -1,9 +1,8 @@
 import { readCsv } from "./readCsv.js"
+import { getCenter } from "./getCenter.js"
 
 // Initialize and add the map
 async function initMap() {
-
-  const center = { lat: -25.344, lng: 131.031 }
 
   // const places = [
   //   { lat: -25.344, lng: 131.031 }, 
@@ -11,8 +10,11 @@ async function initMap() {
   // ]
   const places = await readCsv()
 
+  // const center = { lat: -25.344, lng: 131.031 }
+  const center = getCenter(places)
+
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
+    zoom: 6,
     center: center,
   })
 
