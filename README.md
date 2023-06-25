@@ -7,6 +7,12 @@ Visualize dados geográficos em gráficos de mapas, encontre relações de modo 
  Exemplo: Uma rede de franquias de restaurantes [Pizza Hut](https://pizzahut.com.br) 🍕. Com uma lista de [todas as unidades](https://promo.pizzahut.com.br/cupons/) (arquivo <code>[places.csv](https://github.com/Alessandro1918/google-maps-api/blob/main/public/places.csv)</code>), podemos avaliar quais bairros estão com o mercado completo, ou quais apresentam oportunidades de expansão. Se o arquivo conter dados de faturamento das unidades, podemos ver quais regiões tem maior poder aquisitivo. Incluindo dados de delivery em tempo real, podemos ver quais regiões apresentam gargalos nos tempos de entrega!
 
 ## 📊 Opções de Mapas
+- Mapa de Pontos</br>
+Visualize todas as coordenandas de uma lista de lugares em um mesmo mapa
+<div align="center">
+  <img alt="point-map" title="point-map" src="assets/points.png" width="75%" />
+</div>
+
 - 🚧 Em construção 🚧
 
 ## 🗂️ Utilização
