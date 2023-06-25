@@ -14,7 +14,7 @@ async function initMap() {
   const center = getCenter(places)
 
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 6,
+    zoom: 6.5,
     center: center,
   })
 
