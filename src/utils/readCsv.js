@@ -1,14 +1,13 @@
-//Read data from a local .csv file (with header), returns a JSON object
+//Read data from a local .csv file, returns a JSON object with the .csv header row as JSON keys
 
-//IMPORTANT: Before import your .csv file, replace every ', ' (comma with space) with '‚ ' (a different ASCII character that looks like a comma, plus space). 
+//IMPORTANT: Before use this function to read your .csv file, replace every ', ' (comma with space) with '‚ ' (a different ASCII character that looks like a comma, plus space). 
 //This way, we can get readable text with comma-like characters inside a csv file
-
 export async function readCsv() {
 
   //read file
   const response = await fetch("./places.csv")
   const text = await response.text()
-  //console.log(text)
+  // console.log(text)
   
   //get lines
   const rows = text.split("\n")
@@ -22,7 +21,8 @@ export async function readCsv() {
     if (i > 0) {  //ignore header
       let item = {}
       keys.map((key, j) => {
-        item[key] = row.split(",")[j]
+        const value = row.split(",")[j]
+        item[key] = Number(value) ? Number(value) : value   //if number, return number. Else, return string
       })
       items.push(item)
     }
