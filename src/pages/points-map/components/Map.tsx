@@ -19,7 +19,7 @@ export default function Map() {
   // const center = { lat: -25.344, lng: 131.031 }
   const [ center, setCenter ] = useState<{lat: number, lng:number}>({lat: 0, lng:0})
   
-  //load data to state (async):
+  // Load data to state (async):
   useEffect(() => {  
     async function loadData() {
       const places = await readCsv()
@@ -30,7 +30,7 @@ export default function Map() {
     loadData()
   }, [])
 
-  //load map when I get the data:
+  // Load map when I get the data:
   useEffect(() => {
 
     if (center.lat == 0 && center.lng == 0) return
@@ -43,6 +43,7 @@ export default function Map() {
     loader
       .load()
       .then((google) => {
+        // Init the map
         const map = new google.maps.Map(
           mapRef.current!, 
           {
@@ -50,13 +51,33 @@ export default function Map() {
             zoom: 6.5
           }
         )
-        places.map(place => {
+
+        // Create an info window to share between markers.
+        const infoWindow = new google.maps.InfoWindow()
+
+        //Add a Marker for each place
+        places.map((place, i) => {
           const marker = new google.maps.Marker({
             map: map,
             position: {
               lat: place["Lat"],
               lng: place["Lng"]
-            }
+            },
+            // title: place["Name"],
+            // label: String(place["Id"])
+          })
+
+          // Add a click listener for each marker, and set up the info window.
+          const markerInfo = 
+          `
+          <h3>${place["Name"]}</h3>
+          <p>${place["Address"]}</p>
+          `
+          marker.addListener("click", () => {
+            infoWindow.close()
+            // infoWindow.setContent(marker.getTitle())
+            infoWindow.setContent(markerInfo)
+            infoWindow.open(marker.getMap(), marker)
           })
         })
       })
