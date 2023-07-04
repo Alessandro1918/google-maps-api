@@ -6,7 +6,7 @@ import { PlaceProps } from "../../../interfaces/PlaceProps"
 import { readCsv } from "../../../utils/readCsv.js"
 import { getCenter } from "../../../utils/getCenter.js"
 
-export function Map() {
+export default function Map() {
 
   const mapRef = useRef<HTMLDivElement>(null)
 
