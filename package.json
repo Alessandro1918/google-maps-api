@@ -2,7 +2,6 @@
   "name": "google-maps-api",
   "version": "1.0.0",
   "private": true,
-
   "description": "## 🚀 Projeto Visualize dados geográficos em gráficos de mapas, encontre relações de modo mais fácil, e tenha insights melhores!",
   "scripts": {
     "dev": "next dev",
@@ -13,6 +12,7 @@
   "author": "Ale B. C.",
   "license": "ISC",
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.2",
     "@types/node": "20.3.2",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
@@ -20,5 +20,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@types/google.maps": "^3.53.4"
   }
 }

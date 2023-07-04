@@ -2,13 +2,12 @@
 
 //IMPORTANT: Before import your .csv file, replace every ', ' (comma with space) with '‚ ' (a different ASCII character that looks like a comma, plus space). 
 //This way, we can get readable text with comma-like characters inside a csv file
-
 export async function readCsv() {
 
   //read file
   const response = await fetch("./places.csv")
   const text = await response.text()
-  //console.log(text)
+  // console.log(text)
   
   //get lines
   const rows = text.split("\n")
