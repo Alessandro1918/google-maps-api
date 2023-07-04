@@ -1,19 +1,26 @@
 # google-maps-api
 
 ## 🚀 Projeto
-Visualize dados geográficos em gráficos de mapas, encontre relações de modo mais fácil, e tenha insights melhores!
-</br>
-</br>
- Exemplo: Uma rede de franquias de restaurantes [Pizza Hut](https://pizzahut.com.br) 🍕. Com uma lista de [todas as unidades](https://promo.pizzahut.com.br/cupons/) (arquivo <code>[places.csv](https://github.com/Alessandro1918/google-maps-api/blob/main/public/places.csv)</code>), podemos avaliar quais bairros estão com o mercado completo, ou quais apresentam oportunidades de expansão. Se o arquivo conter dados de faturamento das unidades, podemos ver quais regiões tem maior poder aquisitivo. Incluindo dados de delivery em tempo real, podemos ver quais regiões apresentam gargalos nos tempos de entrega!
+Visualize dados geográficos em gráficos de mapas, encontre relações de modo mais fácil, e tenha insights melhores!</br>
+
+Exemplo: Uma rede de franquias de restaurantes [Pizza Hut](https://pizzahut.com.br) 🍕. Com uma lista de [todas as unidades](https://promo.pizzahut.com.br/cupons/) (arquivo <code>[places.csv](https://github.com/Alessandro1918/google-maps-api/blob/main/public/places.csv)</code>), podemos avaliar quais bairros estão com o mercado completo, ou quais apresentam oportunidades de expansão. Se o arquivo conter dados de faturamento das unidades, podemos ver quais regiões tem maior poder aquisitivo. Incluindo dados de delivery em tempo real, podemos ver quais regiões apresentam gargalos nos tempos de entrega!
+
+## 🛠️ Tecnologias
+- [API de Maps do Google](https://developers.google.com/maps/documentation/javascript?hl=pt-br) 
+- [Next.js](https://nextjs.org)
 
 ## 📊 Opções de Mapas
 - Mapa de Pontos</br>
-Visualize todas as coordenandas de uma lista de lugares em um mesmo mapa
+Visualize todas as coordenandas de uma lista de lugares em um mesmo mapa.</br>
+Demo: clique no mapa para ver o exemplo funcionando!
 <div align="center">
-  <img alt="point-map" title="point-map" src="assets/points.png" width="75%" />
+  <a href="https://google-maps-api-alessandro1918.vercel.app/points-map">
+    <img alt="point-map" title="point-map" src="assets/points.png" width="75%" />
+  </a>
 </div>
 
-- 🚧 Em construção 🚧
+</br>
+- Outras opções de Mapas: 🚧 Em construção 🚧
 
 ## 🗂️ Utilização
 
@@ -35,3 +42,6 @@ Visualize todas as coordenandas de uma lista de lugares em um mesmo mapa
   $ npm install             #download dependencies to node_modules
   $ npm run dev             #start the project
 ```
+
+## ⭐ Like, Subscribe, Follow!
+Curtiu o projeto? Marque esse repositório com uma Estrela ⭐!
