@@ -3,5 +3,5 @@ export interface PlaceProps {
   Name: string
   Address: string
   Lat: number
-  Long: number
+  Lng: number
 }

@@ -54,8 +54,8 @@ export function Map() {
           const marker = new google.maps.Marker({
             map: map,
             position: {
-              lat: Number(place["Lat"]),
-              lng: Number(place["Long"])
+              lat: place["Lat"],
+              lng: place["Lng"]
             }
           })
         })
