@@ -13,6 +13,11 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1>Hello, World!</h1>
+        <h1>Opções de Mapas:</h1>
+        <ul>
+          <li><a href="/points-map">/points-map</a></li>
+          <li><a href="/custom-markers">/custom-markers</a></li>
+        </ul>
       </main>
     </>
   )
