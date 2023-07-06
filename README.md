@@ -11,15 +11,23 @@ Exemplo: Uma rede de franquias de restaurantes [Pizza Hut](https://pizzahut.com.
 
 ## 📊 Opções de Mapas
 - Mapa de Pontos</br>
-Visualize todas as coordenandas de uma lista de lugares em um mesmo mapa.</br>
-Demo: clique no mapa para ver o exemplo funcionando!
-<div align="center">
-  <a href="https://google-maps-api-alessandro1918.vercel.app/points-map">
-    <img alt="point-map" title="point-map" src="assets/points.png" width="75%" />
-  </a>
-</div>
+  Visualize todas as coordenandas de uma lista de lugares em um mesmo mapa.</br>
+  Demo: clique no mapa para ver o exemplo funcionando!
+  <div align="center">
+    <a href="https://google-maps-api-alessandro1918.vercel.app/points-map">
+      <img alt="points-map" title="points-map" src="assets/points-map.png" width="85%" />
+    </a>
+  </div>
 
-</br>
+- Marcadores customizados </br>
+  Personalize seus marcadores com base em algum critério quantitativo (tempo de entrega, por ex.).</br>
+  Demo: clique no mapa para ver o exemplo funcionando!
+  <div align="center">
+    <a href="https://google-maps-api-alessandro1918.vercel.app/points-map">
+      <img alt="custom-markers" title="custom-markers" src="assets/custom-markers.png" width="85%" />
+    </a>
+  </div>
+
 - Outras opções de Mapas: 🚧 Em construção 🚧
 
 ## 🗂️ Utilização
