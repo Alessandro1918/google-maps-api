@@ -5,19 +5,18 @@ import { Loader } from "@googlemaps/js-api-loader"
 import { PlaceProps } from "../../../interfaces/PlaceProps"
 import { readCsv } from "../../../utils/readCsv.js"
 import { getCenter } from "../../../utils/getCenter.js"
+import Image from 'next/image'
+import markerRed from "../assets/marker_red.png"
+import markerOrange from "../assets/marker_orange.png"
 
-//https://developers.google.com/maps/documentation/javascript/adding-a-google-map?hl=pt-br
+
+//https://developers.google.com/maps/documentation/javascript/markers?hl=pt-br#marker_labels
 export default function Map() {
 
   const mapRef = useRef<HTMLDivElement>(null)
 
-  // const places = [
-  //   { lat: -25.344, lng: 131.031 }, 
-  //   { lat: -24.344, lng: 132.031 }
-  // ]
   const [ places, setPlaces ] = useState<PlaceProps[]>([])
 
-  // const center = { lat: -25.344, lng: 131.031 }
   const [ center, setCenter ] = useState<{lat: number, lng:number}>({lat: 0, lng:0})
   
   // Load data to state (async):
@@ -58,6 +57,7 @@ export default function Map() {
 
         //Add a Marker for each place
         places.map((place, i) => {
+          const value = Math.random() * (101 - 0) + 0
           const marker = new google.maps.Marker({
             map: map,
             position: {
@@ -66,6 +66,12 @@ export default function Map() {
             },
             // title: place["Name"],
             // label: String(place["Id"])
+            icon: 
+              value > 0 && value < 19 ? "./assets/marker_green.png"
+              : value > 20 && value < 39 ? "./assets/marker_blue.png"
+              : value > 40 && value < 59 ? "./assets/marker_yellow.png"
+              : value > 60 && value < 79 ? "./assets/marker_orange.png"
+              : "./assets/marker_red.png"
           })
 
           // Add a click listener for each marker, and set up the info window.
