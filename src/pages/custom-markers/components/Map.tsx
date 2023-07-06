@@ -5,10 +5,6 @@ import { Loader } from "@googlemaps/js-api-loader"
 import { PlaceProps } from "../../../interfaces/PlaceProps"
 import { readCsv } from "../../../utils/readCsv.js"
 import { getCenter } from "../../../utils/getCenter.js"
-import Image from 'next/image'
-import markerRed from "../assets/marker_red.png"
-import markerOrange from "../assets/marker_orange.png"
-
 
 //https://developers.google.com/maps/documentation/javascript/markers?hl=pt-br#marker_labels
 export default function Map() {
