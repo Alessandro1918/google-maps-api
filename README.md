@@ -23,7 +23,7 @@ Exemplo: Uma rede de franquias de restaurantes [Pizza Hut](https://pizzahut.com.
   Personalize seus marcadores com base em algum critério quantitativo (tempo de entrega, por ex.).</br>
   Demo: clique no mapa para ver o exemplo funcionando!
   <div align="center">
-    <a href="https://google-maps-api-alessandro1918.vercel.app/points-map">
+    <a href="https://google-maps-api-alessandro1918.vercel.app/custom-markers">
       <img alt="custom-markers" title="custom-markers" src="assets/custom-markers.png" width="85%" />
     </a>
   </div>
