@@ -53,7 +53,7 @@ export default function Map() {
 
         //Add a Marker for each place
         places.map((place, i) => {
-          const value = Math.random() * (101 - 0) + 0
+          const value = Math.floor(Math.random() * (101 - 1) + 1 )  //between 1 and 100, including both
           const marker = new google.maps.Marker({
             map: map,
             position: {
@@ -63,10 +63,10 @@ export default function Map() {
             // title: place["Name"],
             // label: String(place["Id"])
             icon: 
-              value > 0 && value < 19 ? "./assets/marker_green.png"
-              : value > 20 && value < 39 ? "./assets/marker_blue.png"
-              : value > 40 && value < 59 ? "./assets/marker_yellow.png"
-              : value > 60 && value < 79 ? "./assets/marker_orange.png"
+              value >= 1 && value <= 20 ? "./assets/marker_green.png"
+              : value >= 21 && value <= 40 ? "./assets/marker_blue.png"
+              : value >= 41 && value <= 60 ? "./assets/marker_yellow.png"
+              : value >= 61 && value <= 80 ? "./assets/marker_orange.png"
               : "./assets/marker_red.png"
           })
 
