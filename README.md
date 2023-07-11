@@ -11,11 +11,14 @@ Exemplo: Uma rede de franquias de restaurantes [Pizza Hut](https://pizzahut.com.
 
 ## 📊 Opções de Mapas
 - Mapa de Pontos</br>
-  Visualize todas as coordenandas de uma lista de lugares em um mesmo mapa.</br>
+  Visualize todas as coordenadas de uma lista de lugares em um mesmo mapa.</br>
   Demo: clique no mapa para ver o exemplo funcionando!
   <div align="center">
     <a href="https://google-maps-api-alessandro1918.vercel.app/points-map">
-      <img alt="points-map" title="points-map" src="assets/points-map.png" width="85%" />
+      <img alt="points-map" title="points-map" src="assets/points-map.png" width="45%" />
+    </a>
+    <a href="https://google-maps-api-alessandro1918.vercel.app/points-map">
+      <img alt="info-window-marker" title="info-window-marker" src="assets/info-window-marker.png" width="45%" />
     </a>
   </div>
 
@@ -25,6 +28,15 @@ Exemplo: Uma rede de franquias de restaurantes [Pizza Hut](https://pizzahut.com.
   <div align="center">
     <a href="https://google-maps-api-alessandro1918.vercel.app/custom-markers">
       <img alt="custom-markers" title="custom-markers" src="assets/custom-markers.png" width="85%" />
+    </a>
+  </div>
+
+- Marcadores agrupados </br>
+  Muitos marcadores no mapa? Junte-os em um grupo! Clique no grupo ou dê zoom para ver os marcadores individuais.</br>
+  Demo: clique no mapa para ver o exemplo funcionando!
+  <div align="center">
+    <a href="https://google-maps-api-alessandro1918.vercel.app/cluster-markers">
+      <img alt="cluster-markers" title="cluster-markers" src="assets/cluster-markers.png" width="85%" />
     </a>
   </div>
 

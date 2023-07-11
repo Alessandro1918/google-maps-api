@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 import Map from "./components/Map"
 
-export default function CustomMarkers() {
+export default function ClusterMarkers() {
 
   return (
     <>

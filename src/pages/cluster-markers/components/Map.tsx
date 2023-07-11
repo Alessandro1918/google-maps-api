@@ -1,12 +1,13 @@
 "use client"
 import { useState, useEffect, useRef } from "react"
 import { Loader } from "@googlemaps/js-api-loader"
+import { MarkerClusterer } from "@googlemaps/markerclusterer"
 
 import { PlaceProps } from "../../../interfaces/PlaceProps"
 import { readCsv } from "../../../utils/readCsv.js"
 import { getCenter } from "../../../utils/getCenter.js"
 
-//https://developers.google.com/maps/documentation/javascript/markers?hl=pt-br#marker_labels
+//https://developers.google.com/maps/documentation/javascript/marker-clustering?hl=pt-br
 export default function Map() {
 
   const mapRef = useRef<HTMLDivElement>(null)
@@ -52,8 +53,8 @@ export default function Map() {
         const infoWindow = new google.maps.InfoWindow()
 
         //Add a Marker for each place
+        const markers: google.maps.Marker[] = []
         places.map((place, i) => {
-          const value = Math.floor(Math.random() * (101 - 1) + 1 )  //between 1 and 100, including both
           const marker = new google.maps.Marker({
             map: map,
             position: {
@@ -62,12 +63,6 @@ export default function Map() {
             },
             // title: place["Name"],
             // label: String(place["Id"])
-            icon: 
-              value >= 1 && value <= 20 ? "./assets/marker_green.png"
-              : value >= 21 && value <= 40 ? "./assets/marker_blue.png"
-              : value >= 41 && value <= 60 ? "./assets/marker_yellow.png"
-              : value >= 61 && value <= 80 ? "./assets/marker_orange.png"
-              : "./assets/marker_red.png"
           })
 
           // Add a click listener for each marker, and set up the info window.
@@ -82,6 +77,17 @@ export default function Map() {
             infoWindow.setContent(markerInfo)
             infoWindow.open(marker.getMap(), marker)
           })
+
+          markers.push(marker)
+        })
+
+        // Add a marker clusterer to manage the markers.
+        new MarkerClusterer({
+          // algorithm?: Algorithm;
+          map,
+          markers,
+          // renderer?: Renderer;
+          // onClusterClick?: onClusterClickHandler;
         })
       })
       .catch(e => {

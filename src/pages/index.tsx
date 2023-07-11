@@ -17,6 +17,7 @@ export default function Home() {
         <ul>
           <li><a href="/points-map">/points-map</a></li>
           <li><a href="/custom-markers">/custom-markers</a></li>
+          <li><a href="/cluster-markers">/cluster-markers</a></li>
         </ul>
       </main>
     </>
