@@ -1,5 +1,7 @@
 # google-maps-api
-
+![](https://tokei.rs/b1/github/Alessandro1918/google-maps-api)
+![](https://tokei.rs/b1/github/Alessandro1918/google-maps-api?category=code)
+![](https://tokei.rs/b1/github/Alessandro1918/google-maps-api?category=comments)
 ## 🚀 Projeto
 Visualize dados geográficos em gráficos de mapas, encontre relações de modo mais fácil, e tenha insights melhores!</br>
 
